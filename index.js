@@ -235,11 +235,27 @@ function getArtistByIndex(array, index) {
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/* Code here */){
 
-  /* Code here */
+// "1471 - 1528"
+// Get rid of space
+// if date is less than par1, and date is more than par 2, do not include
 
-}
+// let yearsLived =[];
+// function get20s(compareYears){
+//   for(let i = 0; i < artists.length; i++) {
+//     if(compareYears == artists[i].years) {
+//       return yearsLived;
+//     } else if (compareYears < artists[i].years) {
+//       return '';
+//     } else (compareYears > artists[i].years) {
+//       return '';
+//     }
+//   }
+// }
+
+// console.log(get20s(1901-1959));
+
+
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -252,11 +268,21 @@ function get20s(/* Code here */){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
+
+let howManyLeft;
+function removeArtist(array, index) {
+
+    array.splice(array[index], 1);
+    return howManyLeft = array.length-1
   }
-  
- 
+
+console.log(removeArtist(artists, 0));
+console.log(removeArtist(artists, 0));
+console.log(removeArtist(artists, 0));
+console.log(removeArtist(artists, 0));
+console.log(removeArtist(artists, 0));
+console.log(howManyLeft);
+
 
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
