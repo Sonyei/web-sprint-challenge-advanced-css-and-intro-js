@@ -137,7 +137,7 @@ button:hover{
 
 /*Media queries*/
 
-
+/*mobile mode*/
 @media (min-width: 500px) { 
     nav a {
         margin: 0 7%;
@@ -156,6 +156,7 @@ button:hover{
     }
 }
 
+/*tablet mode*/
 @media (min-width: 900px) {
         nav a {
         margin: 0 3%;
