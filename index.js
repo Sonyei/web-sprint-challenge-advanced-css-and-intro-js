@@ -208,14 +208,14 @@ const artists = [
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
-console.log(artists[0]);
-console.log(artists[2].bio);
+console.log(`Problem 1 solution --> `, artists[0]);
+console.log(`Problem 1 solution --> `, artists[2].bio);
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
 
 artists[8].name = "Vincent Van Gogh";
-console.log(artists[8]);
+console.log(`Problem 2 solution --> `, artists[8]);
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -229,7 +229,7 @@ function getArtistByIndex(array, index) {
     return `The artist at index ${array[index].id} is ${array[index].name}`;
   }
   
-  console.log(getArtistByIndex(artists, 0));
+  console.log(`Problem 3 solution --> `, getArtistByIndex(artists, 0));
   /**
 
 
@@ -247,7 +247,7 @@ for (let i = 0; i < artists.length; i++) {
   return yearsLived;
 }//function
 
-console.log(get20s(artists));
+console.log(`Problem 4 solution --> `, get20s(artists));
 
 
 
@@ -270,12 +270,12 @@ function removeArtist(array, index) {
     return howManyLeft = array.length-1
   }
 
-console.log(removeArtist(artists, 0));
-console.log(removeArtist(artists, 0));
-console.log(removeArtist(artists, 0));
-console.log(removeArtist(artists, 0));
-console.log(removeArtist(artists, 0));
-console.log(howManyLeft);
+console.log(`Problem 5 solution --> `, removeArtist(artists, 0));
+console.log(`Problem 5 solution --> `, removeArtist(artists, 0));
+console.log(`Problem 5 solution --> `, removeArtist(artists, 0));
+console.log(`Problem 5 solution --> `, removeArtist(artists, 0));
+console.log(`Problem 5 solution --> `, removeArtist(artists, 0));
+
 
 
 /**
@@ -299,7 +299,7 @@ function addArtist(id, name, years, genre, nationality, bio){
 
 
 console.log(new addArtist(20, 'Angelika Blackburn', '1989-CryoSleep', 'Fullstack Web Dev', 'Mexy-mix, 3rd gen Mexican American', `I\'m a goofball who loves humor of (most) shades. I like JS, even though it hates me. So there\'s that.`));
-console.log(artists);
+console.log(`Problem 6 solution --> `, artists);
 
 
 
@@ -322,7 +322,7 @@ function mostPainting(array) {
   return artistName;
 }
 
-console.log(mostPainting(artists));
+console.log(`Problem 7 solution --> `, mostPainting(artists));
 
 
 // function mostPainting(arr) {
