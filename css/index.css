@@ -134,3 +134,43 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+/*Media queries*/
+
+
+@media (min-width: 500px) { 
+    nav a {
+        margin: 0 7%;
+        font-size: 2rem;
+    }
+    
+    .artists-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 70%;
+    }
+    .artist {
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+        nav a {
+        margin: 0 3%;
+        font-size: 2rem;
+    }
+    .artists-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+    width:80%;
+    margin:0 auto;
+    }
+    .artist {
+    width:40%;
+}
+}
+
